@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Against';
+  src: url('fonts/Against-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* couleurs du contenu */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d0d1a; 
+  color: #f5f5f5; 
+}
+
+/* navigation */
+nav {
+  width: 100%;
+  background: #0d0d1a;
+  padding: 15px 0;
+  position: fixed; top: 0; left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* 2. Header */
+header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-family: 'Against', sans-serif;
+  font-size: 3rem;
+  color: #a6d0e4; 
+  text-shadow: 0 0 5px #a6d0e4; 
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* structure pour le bouton */
+header .bouton {
+  padding: 12px 25px;
+  background-color: #1a2a4c;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+/* propriétés pour l'image */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* css pour les titres */
+h2, h3 {
+  font-family: 'Against', sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  border-bottom: 2px solid #1a2a4c;
+  padding-bottom: 5px;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+ul {
+  list-style: disc inside;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/*  créations des tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #1a2a4c;
+  padding: 12px;
+  text-align: left;
+}
+
+/* appliquons le responsive */
+@media (max-width: 768px) {
+  /* la navigation passe en colonne */
+  nav ul {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /*  responsive donc on réduit le titre pour les mobiles */
+  header h1 {
+    font-size: 2.5rem; 
+  }
+}
